@@ -40,7 +40,6 @@ public class PermissionChecker {
         };
     }
 
-
     public boolean canDelete(Authentication auth, Integer targetUserId) {
         if (auth == null || !(auth.getPrincipal() instanceof EmployeePrincipal principal)) return false;
 
